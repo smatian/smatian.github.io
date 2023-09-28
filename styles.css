@@ -161,3 +161,48 @@ body {
   }
 }
 
+   /* Add CSS for the explosion effect */
+   .explosion {
+    position: absolute;
+    animation: explode 0.5s linear;
+  }
+
+  /* Define the explode animation */
+  @keyframes explode {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s;
+  }
+  
+  .stay {
+    animation-delay: 1s;
+    animation-duration: 3s;
+  }
+  
+  .fade-out {
+    animation: fadeOut 1.5s;
+  }
+
+  @font-face {
+    font-family: 'Minecraft';
+    src: url('minecraft.otf') format('opentype');
+}

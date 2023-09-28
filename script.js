@@ -31,3 +31,24 @@
       window.addEventListener('load', function () {
         animateShootingStar();
       });
+
+      const accomplishment = document.getElementById("accomplishment");
+
+    accomplishment.addEventListener("mouseover", () => {
+      const explosion = document.createElement("div");
+      explosion.classList.add("explosion");
+      accomplishment.appendChild(explosion);
+
+      setTimeout(() => {
+        accomplishment.removeChild(explosion);
+      }, 500); // Adjust the duration as needed
+    });
+
+    $(document).ready(function(){
+      $(".fa-bed").click(function(){
+        $("#title-screen").fadeIn(1500).delay(3000).fadeOut(1500);
+      });
+    });
+    
+    
+    

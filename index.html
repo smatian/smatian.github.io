@@ -32,12 +32,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="styles.css">
+    <!-- Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Custom CSS -->
     
   </head>
 
   <body>
+    <div id="title-screen" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;">
+      <h1 style="font-family: 'Minecraft', Arial, sans-serif; color: #FF5555; font-size: 30px; text-align: center; transform: scale(5.5); font-weight: bold;">BED DESTROYED</h1>
+      <br>
+      <br>
+      <br>
+      <h2 style="font-family: 'Minecraft', Arial, sans-serif; color: white; font-size: 25px; text-align: center; transform: scale(2.5); font-weight: bold;">You will no longer respawn!</h2>
+</div>
+
+
+    
+    
     <header class="text-center mt-5 mb-5">
+      
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="#"
@@ -105,9 +120,8 @@
           Some of my accomplishments..
         </h2>
         <div class="row text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" id="accomplishment">
             <h3 class="main-color">Gymnastics State Champion</h3>
-
             <i class="fa fa-medal main-color fa-3x animate__animated animate__bounceIn"></i>
             <p class="secondary-color">
               Level 5 Gymnastics California State Champion
@@ -163,6 +177,35 @@
           
         </div>
       </section>
+      <section class="section-padding">
+        <h2 class="main-color text-center my-5 animate__animated animate__fadeInUp">
+          My GitHub Projects
+        </h2>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <div class="card card-body">
+              <h3 class="main-color">Benezene</h3>
+              <p class="secondary-color">
+                Java code draws benzene structure using gpdraw library.
+
+              </p>
+              <a href="https://github.com/smatian/Benezene" class="btn btn-rounded main-color">View Project</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-body">
+              <h3 class="main-color">House</h3>
+              <p class="secondary-color">
+                Java code draws a simple house with door and windows.
+
+              </p>
+              <a href="https://github.com/smatian/house" class="btn btn-rounded main-color">View Project</a>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
+      
     </div>
 
 
