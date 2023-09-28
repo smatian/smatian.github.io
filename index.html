@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Sina Matian</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Custom CSS -->
+    
+  </head>
+
+  <body>
+    <header class="text-center mt-5 mb-5">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><h1 class="main-color animate__animated animate__fadeInDown animate-header">
+              Sina Matian
+            </h1></a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a
+                class="nav-link animate__animated animate__fadeInRight"
+                href="#faq"
+                >AP Comp Sci A</a
+              >
+              <a
+                class="nav-link animate__animated animate__fadeInRight"
+                href="#discord"
+                >AP Comp Sci Principles</a
+              >
+              <a
+                class="nav-link animate__animated animate__fadeInRight"
+                href="#support"
+                >Gymnastics</a
+              >
+              <a
+                class="nav-link btn btn-rounded main-color animate__animated animate__fadeInRight"
+                href="#purchase"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <header class="text-center mt-5">
+        <h1 class="main-color animate__animated animate__fadeInDown animate-header">
+          Sina Matian
+        </h1>
+        <p class="secondary-color animate__animated animate__fadeInUp">
+          Hello! My name is Sina Matian, I am a 16 year old from Calabasas CA. I really love fragrances, fashion, cars, and sports. I also love to code in my free time. Some of my favorite languages are Python, Javascript, and C#. I also am learning Java.
+        </p>
+      </header>
+
+      <section class="section-padding">
+        <h2
+          class="main-color text-center my-5 animate__animated animate__fadeInUp"
+        >
+          Some of my accomplishments..
+        </h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h3 class="main-color">Gymnastics State Champion</h3>
+
+            <i class="fa fa-medal main-color fa-3x animate__animated animate__bounceIn"></i>
+            <p class="secondary-color">
+              Level 5 Gymnastics California State Champion
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="main-color">AP Computer Science Principles</h3>
+          
+            <div class="typewriter-text main-color bigger-text"></div>
+          
+            <p class="secondary-color">
+              5/5 AP Score on AP CSP Test
+            </p>
+          </div>
+          
+          <div class="col-md-4">
+            <h3 class="main-color">AP Computer Science A</h3>
+
+            <i class="fas fa-check-circle main-color fa-3x animate__animated animate__bounceIn"></i>
+            <p class="secondary-color">
+              Learning Java in AP Computer Science A
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="main-color">Varsity Wrestling </h3>
+
+            <img src="wrestling.png" height="70" width="70"></img>
+            <p class="secondary-color">
+              Varsity Wrestling Calabasas High School
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="main-color">Hypixel Bedwars </h3>
+
+            <i class="fas fa-bed main-color fa-3x animate__animated animate__bounceIn"></i>
+            <p class="secondary-color">
+              300+ Stars on Hypixel Bedwars 3.6 FKDR
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="main-color">Mr. Yeung's Best Student</h3>
+          
+            <div class="mr-yeung-icon">
+              <i class="fas fa-star main-color fa-3x"></i>
+            </div>
+          
+            <p class="secondary-color">
+              Mr. Yeung thinks I am the smartest guy ever
+            </p>
+          </div>
+          
+          
+          
+        </div>
+      </section>
+    </div>
+
+
+    <script>
+      // Typewriter effect function
+      function typeWriter(text, targetElement, delay) {
+        let i = 0;
+        const interval = setInterval(function () {
+          if (i < text.length) {
+            document.querySelector(targetElement).innerHTML += text.charAt(i);
+            i++;
+          } else {
+            clearInterval(interval);
+          }
+        }, delay);
+      }
+    
+      // Call the typewriter effect for the specific element
+      typeWriter("</>", ".typewriter-text", 200); // Adjust the delay as needed
+    </script>
+    <script>
+      // Function to animate the shooting star
+      function animateShootingStar() {
+        const starContainer = document.querySelector('.star-container');
+    
+        // Animate the star's position
+        starContainer.style.animation = 'shootingStar 2s ease-in-out';
+    
+        // After the animation, remove it to allow for replay
+        starContainer.addEventListener('animationend', function () {
+          starContainer.style.animation = '';
+        });
+      }
+    
+      // Call the shooting star animation when the page loads
+      window.addEventListener('load', function () {
+        animateShootingStar();
+      });
+    </script>
+    
+    
+  </body>
+</html>
