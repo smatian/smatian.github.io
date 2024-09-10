@@ -49,6 +49,9 @@
         $("#title-screen").fadeIn(1500).delay(3000).fadeOut(1500);
       });
     });
-    
+
+function openInSafari() {
+   window.open('your-url-here', '_blank');
+}
     
     
