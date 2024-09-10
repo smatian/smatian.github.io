@@ -51,7 +51,7 @@
     });
 
 function openInSafari() {
-   window.open('your-url-here', '_blank');
+   window.open('google.com', '_blank');
 }
     
     
